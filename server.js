@@ -31,11 +31,16 @@ function getRandomId(keys) {
     return id;
 }
 
-app.get('/table/users', function (req, res) {
+app.get('/table/users/:id?', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
 
     fs.readFile(dbfile, 'utf8', function (err, data) {
-        var response = { rows: JSON.parse(data) };
+        data = JSON.parse(data);
+        var response = { rows: data };
+
+        if (req.params.id != undefined) {
+            response = data[req.params.id];
+        }
 
         res.end(JSON.stringify(response));
     });
