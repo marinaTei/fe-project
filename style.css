@@ -1,0 +1,22 @@
+#table{
+    width: 90%;
+    margin:auto;
+
+}
+nav{
+    width:90%;
+    margin: auto;
+    margin-top: 2%;
+}
+td{
+    text-align: center;
+}
+
+th{
+    text-align: center;
+}
+
+#post{
+    width: 7%;
+    margin-left: 5%;
+}
