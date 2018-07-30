@@ -1,22 +1,24 @@
-#table{
+#table {
     width: 90%;
-    margin:auto;
+    margin: auto;
 
 }
-nav{
-    width:90%;
+
+nav {
+    width: 90%;
     margin: auto;
     margin-top: 2%;
 }
-td{
+
+td {
     text-align: center;
 }
 
-th{
+th {
     text-align: center;
 }
 
-#post{
+#post {
     width: 7%;
     margin-left: 5%;
 }
